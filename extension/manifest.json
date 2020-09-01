@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Kanject",
+    "version": "1.0",
+    "description": "Tool to help learn kanji by showing the relevant kanji by their english counterpart while web browsing" ,
+    "icons": {
+        "48": "images/kanject.svg"
+    },
+    "web_accessible_resources": [
+        "data/*"
+    ],
+    "background": {
+        "scripts": ["background.bundle.js"]
+    },
+    "permissions": [
+     
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js" : ["content.bundle.js"],
+            "css": ["css/style.css"]
+        }
+    ]
+}

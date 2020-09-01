@@ -1,0 +1,20 @@
+{
+    "name": "kanject",
+    "version": "1.0.0",
+    "description": "Tool to help learn kanji by showing the relevant kanji by their english counterpart while web browsing",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/travsr/kanject.git"
+    },
+    "scripts": {
+        "dev-bg": "parcel src/background.js -d extension --out-file background.bundle.js --no-source-maps",
+        "dev-content": "parcel src/content.js -d extension --out-file content.bundle.js --no-source-maps",
+        "build-bg": "parcel build src/background.js -d extension --out-file background.bundle.js --no-source-maps",
+        "build-content": "parcel build src/content.js -d extension --out-file content.bundle.js --no-source-maps",
+        "package": "cd build && zip -r - FS ../dist/kanject-extension.zip * --exclude *.git*"
+    },
+    "dependencies": {
+        "jquery": "^3.5.1"
+    },
+    "devDependencies": {}
+}
