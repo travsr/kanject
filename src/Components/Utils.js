@@ -35,5 +35,7 @@
             return {};
         }
     }
-    
+
  }
+
+ export default Utils;

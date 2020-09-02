@@ -7,11 +7,12 @@
         "url": "https://github.com/travsr/kanject.git"
     },
     "scripts": {
-        "dev-bg": "parcel src/background.js -d extension --out-file background.bundle.js --no-source-maps",
-        "dev-content": "parcel src/content.js -d extension --out-file content.bundle.js --no-source-maps",
-        "build-bg": "parcel build src/background.js -d extension --out-file background.bundle.js --no-source-maps",
-        "build-content": "parcel build src/content.js -d extension --out-file content.bundle.js --no-source-maps",
-        "package": "cd build && zip -r - FS ../dist/kanject-extension.zip * --exclude *.git*"
+        "dev-bg": "parcel src/background.js -d extension/js --out-file background.bundle.js --no-source-maps",
+        "dev-content": "parcel src/content.js -d extension/js --out-file content.bundle.js --no-source-maps",
+        "dev-sidebar": "parcel src/sidebar.js -d extension/js --out-file sidebar.bundle.js --no-source-maps",
+        "build-bg": "parcel build src/background.js -d extension/js --out-file background.bundle.js --no-source-maps",
+        "build-content": "parcel build src/content.js -d extension/js --out-file content.bundle.js --no-source-maps",
+        "build-sidebar": "parcel build src/sidebar.js -d extension/js --out-file sidebar.bundle.js --no-source-maps"
     },
     "dependencies": {
         "jquery": "^3.5.1"
