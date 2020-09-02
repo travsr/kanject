@@ -19,7 +19,20 @@
         {
             "matches": ["<all_urls>"],
             "js" : ["content.bundle.js"],
-            "css": ["css/style.css"]
+            "css": ["css/content-style.css"]
         }
-    ]
+    ],
+    "options_ui": {
+        "page": "options.html"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "kanject@kanject23454235.com"
+        }
+    },
+    "browser_action": {
+        "default_icon": "images/kanject.svg",
+        "default_title": "Kanject",
+        "default_popup": "popup.html"
+      }
 }

@@ -1,0 +1,23 @@
+.kan-container {
+    position: relative;
+    margin-top: 20px;
+    display:inline-block;  
+}
+
+
+
+.kan-reading, .kan-word {
+    position: absolute; 
+    top: -1.6em; 
+    left: 0px;
+    font-size: .7em;
+    width: 500px;
+}
+
+.kan-word {
+    display:none;
+}
+
+.kan-symbol {
+    
+}

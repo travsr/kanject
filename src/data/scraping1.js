@@ -20,4 +20,4 @@ rows.forEach((row) => {
 })
 
 
-console.log(words);
+document.write( JSON.stringify(words));
